@@ -1,0 +1,63 @@
+.Login{
+    form{
+        background-color: rgb(28, 32, 39);
+    
+        background-size: cover;
+        height: 100vh;
+        padding-top: 150px;
+        .box{
+            border: 6px solid rgb(35, 35, 232);
+            background-color: rgb(117, 117, 245);
+            border-radius: 30px;
+            padding: 30px;
+            width: 500px;
+            margin: 0 auto;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+            color: white;
+        
+            h1{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        
+            .content{
+                display: flex;
+                .Left{
+                    input{
+                        border: none;
+                        outline: none;
+                        display: block;
+                        padding: 7px 0 7px 12px;
+                        margin-bottom: 10px;
+                        font-size: 18px;
+                        width: 300px;
+                        border-radius: 5px;
+                    }
+                }
+                .Right{
+                    display: flex;
+                    align-items: center;
+                    margin: 0 auto;
+        
+                    .btn{
+                        width: 100px;
+                        font-size: 22px;
+                        height: 50px;
+                        color: white;
+                        border: 3px solid #14478e;
+                        border-radius: 5px;
+                        text-align: center;
+                        background-color: rgb(27, 85, 165);
+                        font-weight: bold;
+        
+                        &:hover{
+                            cursor: pointer;
+                            background-color: rgb(16, 57, 114);
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}

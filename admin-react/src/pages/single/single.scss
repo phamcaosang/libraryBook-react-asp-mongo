@@ -1,0 +1,317 @@
+.single {
+  display: flex;
+  width: 100%;
+  .singleContainer {
+    flex: 6;
+
+    .top {
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+
+      .left {
+        flex: 1;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 20px;
+        position: relative;
+
+        .editButton {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 5px;
+          font-size: 12px;
+          color: #7451f8;
+          background-color: #7551f823;
+          cursor: pointer;
+          border-radius: 0px 0px 0px 5px;
+          border: none;
+        }
+
+        .item {
+          display: flex;
+          gap: 20px;
+
+          .itemImg {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          .details {
+            margin-top: 10px;
+            .itemTitle {
+              margin-bottom: 10px;
+              color: #555;
+            }
+
+            .detailItem {
+              margin-bottom: 10px;
+              font-size: 14px;
+
+              .itemKey {
+                font-weight: bold;
+                color: gray;
+                margin-right: 5px;
+              }
+              .itemValue {
+                font-weight: 300;
+
+                input{
+                  width: 250px;
+                  padding: 3px 5px;
+                  outline: none;
+                  border: 1px solid rgb(212, 192, 192);
+                  -webkit-box-shadow: 1px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                  box-shadow: 1px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                }
+              }
+            }
+          }
+        }
+      }
+      .right {
+        flex: 1;
+        -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        padding: 20px;
+        position: relative;
+        .editButton {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 5px;
+          font-size: 12px;
+          color: #7451f8;
+          background-color: #7551f823;
+          cursor: pointer;
+          border-radius: 0px 0px 0px 5px;
+          border: none;
+        }
+        .details {
+          margin-top: 10px;
+          .itemTitle {
+            margin-bottom: 10px;
+            color: #555;
+          }
+
+          .detailItem {
+            margin-bottom: 10px;
+            font-size: 14px;
+
+            .itemKey {
+              font-weight: bold;
+              color: gray;
+              margin-right: 5px;
+            }
+            .itemValue {
+              font-weight: 300;
+              input{
+                padding: 3px 5px;
+                outline: none;
+                border: 1px solid rgb(212, 192, 192);
+                -webkit-box-shadow: 1px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 1px 4px 10px 1px rgba(201, 201, 201, 0.47);
+              }
+            }
+            textarea, select{
+              padding: 3px 5px;
+                outline: none;
+                border: 1px solid rgb(212, 192, 192);
+                -webkit-box-shadow: 1px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 1px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            }
+          }
+
+          .updateTs{
+            button{
+              border: none;
+              outline: none;
+              padding: 5px 10px;
+              color: white;
+              border-radius: 5px;
+              background-color: rgb(55, 64, 166);
+              &:hover{
+                cursor: pointer;
+                background-color: rgb(22, 30, 114);
+              }
+            }
+          }
+
+        }
+      }
+    }
+    .bottom {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 20px;
+      margin: 10px 20px;
+      position: relative;
+      .itemKey {
+        font-weight: bold;
+        color: gray;
+        margin-right: 5px;
+      }
+      .editButton {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5px;
+        font-size: 12px;
+        color: #7451f8;
+        background-color: #7551f823;
+        cursor: pointer;
+        border-radius: 0px 0px 0px 5px;
+        border: none;
+      }
+
+
+      .datatableTitle {
+        width: 100%;
+        font-size: 24px;
+        color: gray;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        .link {
+          text-decoration: none;
+          color: green;
+          font-size: 16px;
+          font-weight: 400;
+          border: 1px solid green;
+          padding: 5px;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    
+      .cellWithImg {
+        display: flex;
+        align-items: center;
+    
+        .cellImg {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-right: 20px;
+        }
+      }
+    
+      .cellWithStatus {
+        padding: 5px;
+        border-radius: 5px;
+    
+        &.active {
+          background-color: rgba(0, 128, 0, 0.05);
+          color: green;
+        }
+    
+        &.pending {
+          color: goldenrod;
+          background-color: rgba(255, 217, 0, 0.05);
+        }
+    
+        &.passive {
+          background-color: rgba(255, 0, 0, 0.05);
+          color: crimson;
+        }
+      }
+    
+      .cellAction {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    
+        .viewButton {
+          padding: 2px 5px;
+          border-radius: 5px;
+          color: darkblue;
+          border: 1px solid rgba(0, 0, 140, 0.6);
+          cursor: pointer;
+        }
+    
+        .deleteButton {
+          padding: 2px 5px;
+          border-radius: 5px;
+          color: crimson;
+          border: 1px solid rgba(220, 20, 60, 0.6);
+          cursor: pointer;
+        }
+      }
+
+      .status.Pending{
+        border: none;          
+        background-color: rgb(210, 200, 103);
+        padding: 5px 20px;
+        border-radius: 10px;
+        outline: none;
+        &:hover{
+            cursor: pointer;
+            background-color: rgb(149, 136, 22);
+        }
+        
+    }
+    .status.Accepted{
+        border: none;          
+        background-color: rgb(62, 187, 70);
+        padding: 5px 20px;
+        border-radius: 10px;
+        outline: none;
+        &:hover{
+            cursor: pointer;
+            background-color: rgb(26, 120, 5);
+        }
+        
+    }
+    .status.Expired{
+        border: none;          
+        background-color: rgb(222, 60, 60);
+        padding: 5px 20px;
+        border-radius: 10px;
+        outline: none;
+        &:hover{
+            cursor: pointer;
+            background-color: rgb(146, 7, 7);
+        }
+        
+    }
+    
+    .status.Returned{
+        border: none;          
+        background-color: rgb(82, 196, 183);
+        padding: 5px 20px;
+        border-radius: 10px;
+        outline: none;
+        &:hover{
+            cursor: pointer;
+            background-color: rgb(26, 118, 107);
+        }
+        
+    }
+    .status.Refused{
+      border: none;          
+      background-color: rgb(255, 170, 80);
+      padding: 5px 20px;
+      border-radius: 10px;
+      outline: none;
+      &:hover{
+          cursor: pointer;
+          background-color: rgb(245, 139, 25);
+      }
+    }
+
+      
+    }
+
+    .title {
+      font-size: 18px;
+      color: lightgray;
+      margin-bottom: 20px;
+    }
+  }
+}

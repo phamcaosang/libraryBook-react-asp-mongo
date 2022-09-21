@@ -1,0 +1,157 @@
+.datatable {
+  height: 600px;
+  padding: 20px;
+
+  .datatableTitle {
+    width: 100%;
+    font-size: 24px;
+    color: gray;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .link {
+      text-decoration: none;
+      color: green;
+      font-size: 16px;
+      font-weight: 400;
+      border: 1px solid green;
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .cellWithImg {
+    display: flex;
+    align-items: center;
+
+    .cellImg {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+  }
+
+  .cellWithStatus {
+    padding: 5px;
+    border-radius: 5px;
+
+    &.active {
+      background-color: rgba(0, 128, 0, 0.05);
+      color: green;
+    }
+
+    &.pending {
+      color: goldenrod;
+      background-color: rgba(255, 217, 0, 0.05);
+    }
+
+    &.passive {
+      background-color: rgba(255, 0, 0, 0.05);
+      color: crimson;
+    }
+  }
+
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .viewButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: darkblue;
+      border: 1px solid rgba(0, 0, 140, 0.6);
+      cursor: pointer;
+    }
+
+    .deleteButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: crimson;
+      border: 1px solid rgba(220, 20, 60, 0.6);
+      cursor: pointer;
+    }
+  }
+
+  .status{
+    color: white;
+  }
+  .status.Pending{
+    border: none;          
+    background-color: rgb(210, 200, 103);
+    padding: 5px 20px;
+    border-radius: 10px;
+    outline: none;
+    &:hover{
+        cursor: pointer;
+        background-color: rgb(149, 136, 22);
+    }
+      
+  }
+  .status.Accepted{
+      border: none;          
+      background-color: rgb(62, 187, 70);
+      padding: 5px 20px;
+      border-radius: 10px;
+      outline: none;
+      &:hover{
+          cursor: pointer;
+          background-color: rgb(26, 120, 5);
+      }  
+  }
+
+  .status.Refused{
+    border: none;          
+    background-color: rgb(255, 170, 80);
+    padding: 5px 20px;
+    border-radius: 10px;
+    outline: none;
+    &:hover{
+        cursor: pointer;
+        background-color: rgb(245, 139, 25);
+    }
+}
+  .status.Expired{
+      border: none;          
+      background-color: rgb(222, 60, 60);
+      padding: 5px 20px;
+      border-radius: 10px;
+      outline: none;
+      &:hover{
+          cursor: pointer;
+          background-color: rgb(146, 7, 7);
+      }
+      
+  }
+
+  .status.Done{
+      border: none;          
+      background-color: rgb(82, 196, 183);
+      padding: 5px 20px;
+      border-radius: 10px;
+      outline: none;
+      &:hover{
+          cursor: pointer;
+          background-color: rgb(26, 118, 107);
+      }
+      
+  }
+  .Available{
+    background-color: rgb(12, 115, 115);
+    padding: 5px;
+    border-radius: 6px;
+    color: white;
+  }
+
+  .SoldOut{
+    background-color: rgb(34, 29, 43);
+    padding: 5px;
+    border-radius: 6px;
+    color: white;
+  }
+}
