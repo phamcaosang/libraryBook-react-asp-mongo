@@ -1,0 +1,218 @@
+.BookDetail{
+    width: calc(100% - 80px);
+    margin: 0 auto;
+    padding-top: 50px;
+    
+    
+    
+    .DetailContent{
+        width: 100%;
+        display: flex;
+
+
+
+        .LeftSide{
+            width: 40%;
+            .BottomContent1000_720{
+                display: none;
+            }
+            .cover_temp{
+                height: 500px;
+            }
+
+            .cover{
+                width: 70%;
+                display: block;
+                margin: 30px auto;
+                box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                border-radius: 10px;
+            }
+        }
+        .RightSide{
+            width: 60%;
+            padding: 40px;
+
+            .TopContent{
+                display: flex;
+                flex-wrap: wrap;
+
+                p{
+                    width: 50%;
+                    margin-bottom: 10px;
+                }
+            }
+            .Description{
+                text-align: justify;
+                font-size: 14px;
+                b{
+                    font-size: 16px;
+                }
+            }
+            .Category{
+                margin: 10px 0px;
+            }
+
+            .BottomContent{
+                padding-top: 10px;
+                display: flex;
+
+                .rating{
+                    width: 50%;
+                    p{
+                        margin-bottom: 10px;
+                    }
+                }
+                .ButtonOption{
+                    width: 50%;
+                    button{
+                        font-size: 17px;
+                        width: 160px;
+                        padding: 15px 5px;
+                        margin-top: 15px;
+                        border-radius: 10px;
+                        border-color: rgb(41, 55, 72);
+                        background-color: rgb(106, 103, 121);
+                        color: white;
+                        &:hover{
+                            background-color: rgb(62, 59, 81);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .CategoryRecommendation{
+        .Similar{
+            font-weight: bold;
+            font-style: italic;
+            font-size: 20px;
+            color: rgb(83, 42, 42);
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .BookDetail{
+        .DetailContent{
+            .LeftSide{
+                width: 50%;
+                .cover_temp{
+                    height: 450px;
+                }
+                .BottomContent1000_720{
+                    display: block;
+                    padding-top: 10px;
+                    display: flex;
+
+                    .rating{
+                        width: 50%;
+                        p{
+                            margin-bottom: 10px;
+                        }
+                    }
+                    .ButtonOption{
+                        width: 50%;
+                        button{
+                            font-size: 16px;
+                            width: 150px;
+                            margin-left: 5px;
+                            padding: 15px 0px;
+                            margin-top: 15px;
+                            border-radius: 10px;
+                            border-color: rgb(41, 55, 72);
+                            background-color: rgb(106, 103, 121);
+                            color: white;
+                            &:hover{
+                                background-color: rgb(62, 59, 81);
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+            .RightSide{
+                width: 50%;
+                .BottomContent{
+                    display: none;
+                }
+            }
+        
+        }
+    }
+}
+
+@media only screen and (max-width:720px){
+    .BookDetail{
+        width: calc(100% - 60px);
+        .DetailContent{
+            flex-direction: column;
+            .LeftSide{
+                width: 100%;
+                .BottomContent1000_720{
+                    display: none;
+                }
+            }
+            .RightSide{
+                width: 100%;
+                .BottomContent{
+                    display: block;
+                    .rating{
+                        width: 100%;
+                    }
+                    .ButtonOption{
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:620px){
+    .BookDetail{
+        .DetailContent{
+            .RightSide{
+                .BottomContent{
+                    .rating{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:520px){
+    .BookDetail{
+        .DetailContent{
+            .RightSide{
+                padding: 20px 5px;
+                .TopContent{
+                    flex-direction: column;
+                    p{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:420px){
+    .BookDetail{
+        width: calc(100% - 20px);
+        .DetailContent{
+            .RightSide{
+                .BottomContent{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

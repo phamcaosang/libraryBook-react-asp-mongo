@@ -1,0 +1,23 @@
+.Item{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    img{
+        box-sizing: content-box;
+        padding-left: 10px;
+        display: block;
+        height: 90px;
+        width: 30px;
+        flex: 1;
+    }
+    p{
+        box-sizing: content-box;
+        flex: 8;
+        padding-left: 20px;
+    }
+    margin-bottom: 10px;
+    &:hover{
+        background-color: rgb(13, 16, 32);
+        cursor: pointer;
+    }
+}

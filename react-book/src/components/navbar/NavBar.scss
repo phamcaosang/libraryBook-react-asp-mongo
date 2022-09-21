@@ -1,0 +1,136 @@
+.NavBar{
+    background-color: rgb(13, 16, 32);
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    // overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
+    z-index: 100;
+
+    
+    .Container{
+        width: calc(100% - 50px);
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        
+        .Nav{
+            display: flex;
+            flex-wrap: wrap;
+            flex: 3;
+            justify-content: space-between;
+            align-items: center;
+            
+            div{
+                img{
+                    height: 40px;
+                }
+
+                &:hover{
+                    cursor: pointer;
+                    color: rgb(203, 200, 255);
+
+                }
+            }
+        }
+        .SearchBar{
+            flex: 5;
+            padding-left: 50px;
+            input{
+                position: relative;
+                color: #fff;
+                width: 100%;
+                font-style: italic;
+                font-size: 16px;
+                display: block;
+                padding: 10px 30px;
+                background-color: transparent;
+                outline: none;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(143, 206, 204, 0.3) 0px 18px 36px -18px inset;
+            }
+
+            .SearchResult{
+                position: absolute;
+                background-color: rgb(39, 49, 108);
+                min-width: 700px;
+            }
+        }
+        .cartBox{
+            position: relative;
+
+            .cart{
+                display: block;
+                margin: 12px;
+                &:hover{
+                    cursor: pointer;
+                    color:rgb(101, 115, 191);
+                }
+            }
+    
+            span{
+                font-size: 12px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                border-radius: 50%;
+                border: 1px solid rgb(127, 74, 43);
+                color: rgb(112, 63, 32);
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                align-items: center;
+                display: block;
+            }
+        }
+
+          
+          
+    }
+}
+
+@media only screen and (max-width: 1086px) {
+    .NavBar{
+        .Container{
+            .Nav{
+                flex: 0;
+                .nav-link{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .NavBar{
+        .Container{
+            .SearchBar{
+                padding-left: 20px;
+                input{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 420px){
+    .NavBar{
+        .Container{
+            .Nav{
+                div{
+                    img{
+                        display: none;
+                    }
+                }
+            }
+            .SearchBar{
+                padding-left: 0px;
+                input{
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

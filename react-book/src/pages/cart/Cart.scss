@@ -1,0 +1,48 @@
+.Cart{
+    display: flex;
+    
+
+    .Left{
+        padding-top: 60px;
+        flex: 2;
+        height: 100vh;
+        background-color: #5655a0;
+    }
+
+    .Right{
+        padding-top: 60px;
+        flex: 1;
+        height: 100vh;
+        background-color:rgba(169, 255, 107, 0.311);
+        .Rules{
+            margin-bottom: 20px;
+            h2{
+                text-align: center;
+                padding: 10px 0;
+                background-color: #588624da;
+            }
+            p{
+                padding: 5px 0px 5px 10px;
+            }
+            .Submit{
+                width: 100px;
+                background-color: #588624da;
+                color: white;
+                border-radius: 20px;
+                text-align: center;
+                padding: 10px;
+                margin: 10px auto;
+                &:hover{
+                    cursor: pointer;
+                    background-color: #49701d;
+                }
+            }
+        }
+        .Decoration{
+            img{
+                height: 235px;
+                width: 100%;
+            }
+        }
+    }
+}

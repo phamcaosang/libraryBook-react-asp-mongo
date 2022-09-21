@@ -1,0 +1,26 @@
+.Books{
+    padding-top: 60px;
+    .Title_page{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+
+        background-color: cadetblue;
+    }
+    .container{
+        width: calc(100% - 50px);
+        margin: 0 auto;
+
+
+        .items{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+    }
+}

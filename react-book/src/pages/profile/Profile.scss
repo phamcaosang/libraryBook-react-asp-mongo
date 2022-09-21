@@ -1,0 +1,110 @@
+.Profile{
+    width: 100%;
+    background-color: rgb(13, 16, 32);
+
+    .Container{
+        margin: 0px auto 0 auto;
+        padding-top: 65px;
+        width: calc(100% - 60px);
+        display: flex;
+        background-color: #333;
+        height: 100vh;
+        
+        .Left{
+            flex: 1;
+            // background-color: #fff;
+            background-color: rgb(29, 32, 50);
+
+            .IMG{
+                
+                display: flex;
+                border-radius: 50%;
+                object-fit: cover;
+                margin: 20px 10px;
+                justify-content: space-around;
+
+                img{
+                    height: 140px;
+                    width: 140px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                .upload{
+                    border: 5px solid rgb(92, 82, 202);
+
+                    &:hover{
+                        border: 5px solid rgb(156, 148, 237);
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .uploadBtn{
+                outline: none;
+                border: none;
+                display: block;
+                text-align: center;
+                width: 120px;
+                padding: 5px;
+                background-color: rgb(229, 192, 180);
+                box-shadow: rgba(156, 128, 128, 0.16) 0px 10px 36px 0px, rgba(230, 121, 121, 0.06) 0px 0px 0px 1px;
+                margin: 0 auto;
+                display: block;
+                border-radius: 5px;
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: rgb(96, 47, 31);
+                    color: rgb(237, 237, 209);
+                }
+
+            }
+
+            #file{
+                display: none;
+            }
+            .form{
+                margin: 0 40px;
+                label{
+                    display: block;
+                    font-size: 14px;
+                    color: #fff;
+                }
+                input{
+                    margin-bottom: 15px;
+                    margin-top: 5px;
+                    color: #fff;
+                    width: 250px;
+                    outline: none;
+                    border-radius: 5px;
+                    border: 2px solid rgb(107, 107, 204);
+                    padding: 4px 10px;
+                    background-color: transparent;
+                }
+                button{
+                    display: block;
+                    padding: 5px 15px;
+                    border-radius: 5px;
+                    margin: 0 auto;
+                    outline: none;
+                    border: none;
+                    font-size: 16px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgb(96, 47, 31);
+                        color: rgb(237, 237, 209);
+                    }
+                }
+            }
+
+        }
+
+        .Right{
+            flex: 3;
+            //background-color: burlywood;
+            background-color: #5655a0;
+        }
+    }
+}
+
